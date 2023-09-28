@@ -1,0 +1,377 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     font-family: 'Lato', sans-serif;
+
+}
+img{
+    max-width: 100%;
+}
+.container{
+    justify-content: center;
+    width: 1100px;
+    margin: auto;
+}
+.flex{
+     display: flex;
+     flex-wrap: wrap;
+     
+}
+.col{
+    width: 33.33%;
+    flex: 0 0 auto;
+    padding: 15px;
+}
+h2{
+    font-size: 40px;
+    color: #333366;
+    font-weight: 500;
+}
+h3{
+    font-size: 22px;
+    color: #333366;
+    margin: 22px 0;
+}
+p{
+    font-size: 15px;
+    color: #999;
+    line-height: 1.5;
+}
+.align-center{
+    align-items: center;
+}
+/********header*****/
+header{
+
+    background: #f6f9f9;
+    padding: 25px 0;
+
+}
+header .flex{
+
+}
+.logo{
+    width: 20%;
+    flex: 0 0 auto;
+
+}
+.logo a{
+
+}
+.logo a img{
+
+}
+nav{
+    width: 80%;
+    flex: 0 0 auto;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    font-size: 16px;
+    color: #333366;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: block;
+    padding: 15px 24px;
+    transition-duration: 0.3s;
+}
+nav ul li a:hover{
+    color: #15a4fa; 
+}
+
+/******banner-section****/
+.banner-section{
+    position: relative;
+}
+.banner-section img{
+    width: 100%;
+}
+.arrow{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    color:#fff;
+    font-size: 24px;
+    transform: translateX(-50%);
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+}
+.banner-content h1{
+    font-size: 120px;
+    color: #fff;
+    font-weight: 700;
+}
+.banner-content p{
+    font-size: 20px;
+    color: #fff;
+
+}
+.banner-content span{
+    height: 2px;
+    width: 100%;
+    background: #15a4fa;
+    display: block;
+}
+.banner-content p{}
+.btn{
+    font-size: 18px;
+    border: 1px solid #15a4fa;
+    display: inline-block;
+    padding: 15px 38px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 65px;
+    transition-duration: 0.3s;
+}
+.btn:hover{
+    background-color: #15a4fa;
+
+}
+
+/****aboutus-section*****/
+.aboutus-section{
+    background: #f6f9f9;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.aboutus-section p{
+    font-size: 20px;
+    color: #999;
+    margin-top: 25px;
+    line-height: 1.7;
+}
+
+/*****future-section*****/
+.future-section{
+    padding: 30px 0;
+}
+.future{
+    padding: 50px 30px;
+    text-align: center;
+}
+.future span{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    line-height: 100px;
+    color: #fff;
+    font-size: 50px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 0px #33333369;
+    background: #33ccff;
+
+}
+.future span i{}
+
+/*****showcase-section******/
+.showcase-section{
+    text-align: center;
+    padding: 80px 0;
+    background: #f6f9f9;
+}
+.Showcase{
+    position: relative;
+}
+.Showcase img{
+    width: 100%;
+}
+.Showcase .overlay{
+     background: #15a4fae6;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0;
+     height: 0;
+     transition-duration: 0.2s;
+}
+
+.Showcase:hover .overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: auto;
+}
+
+.Showcase ul{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    display: flex;
+    transition-duration: 0.4s;
+    opacity: 0;
+}
+.Showcase:hover ul{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+
+}
+.Showcase ul li{
+    list-style: none;
+    padding: 5px;
+}
+.Showcase ul li a{
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.Showcase ul li a:hover{}
+
+/*****contact-section******/
+.contact-section{
+    background-image: url(img/Stay.png);
+    padding: 75px 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-section.flex{
+    justify-content: center;
+}
+.contact-section .container{
+    position: relative;
+}
+.contact-section .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(219 28% 25% / 0.9);
+}
+.contact-from{
+    width: 50%;
+    flex: 0 0 auto;
+    text-align: center;
+}
+.contact-from h2{
+    color: #fff;
+}
+.contact-from form{}
+.contact-from form input{
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    background: transparent;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.contact-from form textarea{
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    background: transparent;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.contact-from form{
+    margin-top: 50px;
+}
+.contact-from form ul{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-from form ul li{
+    list-style: none;
+}
+.contact-from form ul li input{
+    width: auto;
+    margin-bottom: 0;
+}
+.contact-from form ul li label{
+    font-size: 15px;
+    color: #fff;
+    padding-left: 10px;
+}
+.contact-from form ul li input[type="submit"]{
+    font-size: 18px;
+    border: 1px solid #15a4fa;
+    display: inline-block;
+    padding: 10px 38px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-duration: 0.1s;
+
+}
+.contact-from form ul li input[type="submit"]:hover{
+    background-color: #15a4fa;
+}
+
+/*****footer******/
+footer{
+    padding: 20px 0;
+}
+.copyright{
+    width: 50%;
+    flex: 0 0 auto;
+}
+.copyright p{}
+.social{
+    width: 50%;
+    flex: 0 0 auto;
+}
+.social ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.social ul li{
+    list-style: none;
+    padding: 5px;
+}
+.social ul li a{
+    font-size: 15px;
+    background: #15a4fa;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #15a4fa;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    transition-duration: 0.1s;
+}
+.social ul li a:hover{
+    background: transparent;
+    color: #15a4fa;
+
+}
+
+
+
+
+
